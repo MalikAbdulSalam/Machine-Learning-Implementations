@@ -1,1 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Future School</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f8f9fb;
+color:#333;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+/* Navigation */
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#0d6efd;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#0d6efd;
+}
+
+/* Hero */
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:58px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:35px;
+max-width:700px;
+margin:auto;
+}
+
+.hero button{
+margin-top:35px;
+padding:15px 40px;
+border:none;
+background:#0d6efd;
+color:white;
+font-size:18px;
+border-radius:50px;
+cursor:pointer;
+transition:.3s;
+}
+
+.hero button:hover{
+background:#084298;
+}
+
+/* Sections */
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.title h2{
+font-size:40px;
+color:#0d6efd;
+margin-bottom:10px;
+}
+
+.title p{
+color:#666;
+}
+
+/* About */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.about h3{
+font-size:34px;
+margin-bottom:20px;
+}
+
+.about p{
+line-height:1.8;
+}
+
+/* Cards */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin:20px 0;
+color:#0d6efd;
+}
+
+/* Teachers */
+
+.teacher img{
+width:120px;
+height:120px;
+border-radius:50%;
+margin-bottom:20px;
+}
+
+/* Gallery */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:12px;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* Contact */
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+input,textarea{
+padding:15px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:16px;
+}
+
+button.submit{
+background:#0d6efd;
+color:white;
+padding:15px;
+border:none;
+cursor:pointer;
+border-radius:8px;
+}
+
+footer{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:42px;
+}
+
+.about,
+.contact{
+grid-template-columns:1fr;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+
+<div class="logo">Bright Future School</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#teachers">Teachers</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Welcome to Bright Future School</h1>
+
+<p>
+Empowering students with knowledge, creativity, and confidence to build a successful future.
+</p>
+
+<button>Apply Now</button>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="title">
+<h2>About Us</h2>
+<p>Providing quality education for tomorrow's leaders.</p>
+</div>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80">
+
+<div>
+
+<h3>Learning Today, Leading Tomorrow</h3>
+
+<p>
+
+Our school provides an engaging learning environment with highly qualified teachers,
+modern classrooms, digital education, sports facilities, and extracurricular activities.
+
+We focus on academic excellence along with personality development.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="features">
+
+<div class="title">
+<h2>Why Choose Us</h2>
+<p>Everything students need to succeed.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>📚 Modern Education</h3>
+<p>Interactive classrooms with smart learning technologies.</p>
+</div>
+
+<div class="card">
+<h3>🏆 Qualified Teachers</h3>
+<p>Experienced and dedicated teaching staff.</p>
+</div>
+
+<div class="card">
+<h3>⚽ Sports</h3>
+<p>Excellent indoor and outdoor sports facilities.</p>
+</div>
+
+<div class="card">
+<h3>💻 Computer Labs</h3>
+<p>Latest computer labs with internet access.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="courses">
+
+<div class="title">
+<h2>Programs</h2>
+<p>Academic excellence from kindergarten to high school.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Primary School</h3>
+<p>Building strong educational foundations.</p>
+</div>
+
+<div class="card">
+<h3>Middle School</h3>
+<p>Interactive learning and creativity.</p>
+</div>
+
+<div class="card">
+<h3>High School</h3>
+<p>Preparing students for university and careers.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="teachers">
+
+<div class="title">
+<h2>Our Teachers</h2>
+<p>Meet our experienced educators.</p>
+</div>
+
+<div class="grid">
+
+<div class="card teacher">
+
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+<h3>Sarah Ahmed</h3>
+
+<p>Mathematics</p>
+
+</div>
+
+<div class="card teacher">
+
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+<h3>John Smith</h3>
+
+<p>Science</p>
+
+</div>
+
+<div class="card teacher">
+
+<img src="https://randomuser.me/api/portraits/women/68.jpg">
+
+<h3>Emily Johnson</h3>
+
+<p>English</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<div class="title">
+<h2>School Gallery</h2>
+<p>Life at our campus.</p>
+</div>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+</section>
+
+<section>
+
+<div class="title">
+<h2>What Parents Say</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>
+"The teachers are amazing and my child enjoys coming to school every day."
+</p>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>
+"Excellent facilities and modern education system."
+</p>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>
+"Highly recommended for academic and personal development."
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div>
+
+<div class="title">
+<h2>Contact Us</h2>
+</div>
+
+<p><strong>📍 Address:</strong> Your School Address</p>
+<br>
+<p><strong>☎ Phone:</strong> +92-300-1234567</p>
+<br>
+<p><strong>✉ Email:</strong> info@yourschool.edu</p>
+
+</div>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<input type="text" placeholder="Subject">
+
+<textarea rows="6" placeholder="Message"></textarea>
+
+<button class="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+© 2026 Bright Future School. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
