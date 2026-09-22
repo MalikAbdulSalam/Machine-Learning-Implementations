@@ -1,0 +1,327 @@
+============================================================
+MACHINE LEARNING + FLASK
+SIMPLE INDUSTRIAL PROJECT ASSIGNMENT
+====================================
+
+## PROJECT TITLE
+
+Concrete Strength Prediction System
+
+============================================================
+
+1. PROJECT SCENARIO
+   ============================================================
+
+A construction company wants to use Machine Learning to
+predict the compressive strength of concrete.
+
+You will build a simple Machine Learning system that:
+
+Concrete Ingredients → Machine Learning Model → Concrete Strength
+
+The final prediction will be available through a Flask
+web application.
+
+============================================================
+2. DATASET
+==========
+
+Use the:
+
+Concrete Compressive Strength Dataset
+
+The dataset contains information about concrete ingredients
+and the resulting concrete strength.
+
+## INPUT FEATURES
+
+1. Cement
+2. Blast Furnace Slag
+3. Fly Ash
+4. Water
+5. Superplasticizer
+6. Coarse Aggregate
+7. Fine Aggregate
+8. Age
+
+## TARGET
+
+Concrete Compressive Strength
+
+============================================================
+3. PROJECT TASKS
+================
+
+Complete the following 7 steps.
+
+---
+
+## STEP 1 — LOAD DATASET
+
+Load the dataset using Pandas.
+
+Check the following:
+
+1. First 5 rows
+2. Number of rows and columns
+3. Column names
+4. Missing values
+
+---
+
+## STEP 2 — PREPARE DATA
+
+Separate the data into:
+
+X = Input Features
+
+y = Concrete Strength
+
+Then divide the data into:
+
+80% Training Data
+
+20% Testing Data
+
+---
+
+## STEP 3 — TRAIN REGRESSION MODELS
+
+Train 3 regression models that you learned in class.
+
+For example:
+
+1. Linear Regression
+2. Decision Tree Regression
+3. Random Forest Regression
+
+You may choose other regression models from the models
+taught in class.
+
+---
+
+## STEP 4 — EVALUATE MODELS
+
+Calculate the following:
+
+1. MAE
+2. RMSE
+3. R² Score
+
+Create a comparison of the three models.
+
+Compare the results and select one model for the final
+application.
+
+---
+
+## STEP 5 — SAVE THE MODEL
+
+Save your selected model using Joblib.
+
+Example:
+
+import joblib
+
+joblib.dump(model, "concrete_model.pkl")
+
+Your project must contain:
+
+concrete_model.pkl
+
+---
+
+## STEP 6 — CREATE FLASK APPLICATION
+
+Create a Flask application that:
+
+1. Loads concrete_model.pkl
+2. Takes concrete information from the user
+3. Sends the information to the model
+4. Generates a prediction
+5. Displays the predicted concrete strength
+
+---
+
+## STEP 7 — CREATE WEB PAGE
+
+Create a simple HTML page with input fields for:
+
+1. Cement
+2. Blast Furnace Slag
+3. Fly Ash
+4. Water
+5. Superplasticizer
+6. Coarse Aggregate
+7. Fine Aggregate
+8. Age
+
+Add a:
+
+Predict Strength
+
+button.
+
+After clicking the button, display:
+
+Predicted Concrete Strength:
+
+XX.XX MPa
+
+============================================================
+4. PROJECT STRUCTURE
+====================
+
+Your project should look like this:
+
+concrete_prediction/
+|
+|-- dataset.csv
+|
+|-- train_model.py
+|
+|-- concrete_model.pkl
+|
+|-- app.py
+|
+|-- templates/
+|   |
+|   |-- index.html
+|
+|-- static/
+|   |
+|   |-- style.css
+|
+|-- requirements.txt
+|
+|-- README.txt
+
+============================================================
+5. REQUIRED LIBRARIES
+=====================
+
+Create a requirements.txt file containing the libraries
+you used.
+
+For example:
+
+pandas
+numpy
+scikit-learn
+joblib
+flask
+
+============================================================
+6. WHAT YOU MUST SUBMIT
+=======================
+
+Submit the following:
+
+1. Dataset
+2. Training Python file
+3. Model comparison results
+4. concrete_model.pkl
+5. Flask app.py
+6. HTML file
+7. CSS file
+8. requirements.txt
+9. Screenshot of your working website
+
+============================================================
+7. MARKS
+========
+
+Dataset loading and preprocessing ............ 15 Marks
+
+3 Regression Models .......................... 25 Marks
+
+Model Evaluation ............................ 15 Marks
+
+Model saved using Joblib .................... 10 Marks
+
+Flask Application ........................... 20 Marks
+
+HTML/CSS Interface .......................... 10 Marks
+
+Project Organization ......................... 5 Marks
+
+TOTAL ...................................... 100 Marks
+
+============================================================
+8. FINAL WORKFLOW
+=================
+
+Your project should follow this workflow:
+
+Dataset
+|
+v
+Preprocessing
+|
+v
+Train 3 Regression Models
+|
+v
+Evaluate Models
+|
+v
+Select Model
+|
+v
+Save Model as .pkl
+|
+v
+Load .pkl using Joblib
+|
+v
+Flask
+|
+v
+HTML Form
+|
+v
+Prediction
+
+============================================================
+IMPORTANT
+=========
+
+You do not need to train the model every time the Flask
+website runs.
+
+First:
+
+Train Model
+|
+v
+Save Model as .pkl
+
+Then:
+
+Flask
+|
+v
+Load .pkl
+|
+v
+Make Prediction
+
+The main purpose of this assignment is to demonstrate that
+you can take a Machine Learning model from training to a
+working web application.
+
+============================================================
+FINAL GOAL
+==========
+
+Build a simple working application that can:
+
+1. Take concrete information from a user
+2. Use a trained regression model
+3. Load the saved .pkl model using Joblib
+4. Make a prediction
+5. Display the predicted concrete strength through Flask
+
+============================================================
+GOOD LUCK
+=========
