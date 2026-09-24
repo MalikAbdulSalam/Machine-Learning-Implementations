@@ -1,0 +1,9 @@
+1 Logistic Regression Predict whether a customer will buy or not buy
+2 K-Nearest Neighbors (KNN) Classify a fishes based on theri features
+3 Decision Tree Classifier Determine whether a loan should be approved or rejected
+4 Random Forest Classifier Detect whether a transaction is fraudulent or legitimate
+5 Support Vector Machine (SVM) Classify a fishes
+6 Naive Bayes Classify emails as spam or not spam
+7 Gradient Boosting Classifier Predict whether a customer will churn or stay
+8 XGBoost Classifier Predict Machine Status risk: Fault, no fault
+9 Neural Network / MLP Classify handwritten digits 0–9
