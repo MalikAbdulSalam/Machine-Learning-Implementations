@@ -1,0 +1,18 @@
+**Assignment: Industrial Bolt Quality Inspection Using Machine Learning**
+
+**Objective:** Develop a machine learning model to classify industrial bolts as Pass or Fail base on their feauters
+
+**Tasks:**
+1. Download dataset 
+2. preporcess if applicable
+3. Split the dataset into 80% training and 20% testing data.
+4. Train a Random Forest classification model.
+5. Calculate and visualize the confusion matrix.
+6. Calculate accuracy, precision, recall, and F1-score.
+7. Analyze the results and explain which evaluation metric is most important for detecting defective bolts.
+
+**Deliverable:** Submit the Python source code, confusion matrix, evaluation metrics, and a brief conclusion.
+
+
+Note:
+Dataset also give see in Task folder
