@@ -1,0 +1,3 @@
+Create a Course recommendation system for digiboost.
+Systme  must be able to get information of student and predict course for him.
+use Flask to complete this task
